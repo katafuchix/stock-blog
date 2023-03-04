@@ -16,5 +16,6 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}      # FTPのパスワード
         local-dir: ./public/                       # アップロードしたいファイルのパス
         server-dir: ${{ secrets.FTP_UPLOAD_DIR }}  # アップロード先のリモートパス
-        exclude: |
-          **/~partytown**
+        exclude: "[**/~partytow/**, **/*partytow/**, ~partytow, *partytow]"
+        #exclude: |
+          #**/~partytown**
