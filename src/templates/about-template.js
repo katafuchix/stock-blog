@@ -11,8 +11,6 @@ const AboutTemplate = ({ data }) => {
   return (
     <Layout title={frontmatter.title}>
       <AboutWrapper>
-        <AboutImageWrapper image={profileImage} alt="" />
-
         <AboutCopy dangerouslySetInnerHTML={{ __html: html }} />
       </AboutWrapper>
     </Layout>
@@ -61,11 +59,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        profile_image {
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, formats: PNG, height: 400)
-          }
-        }
       }
     }
   }
