@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Glass`,
+    title: `Kabu Neko Blog`,
     author: {
       name: `Yinka Adedire`,
       summary: `Self-taught front-end web dev. JAMStack.`,
@@ -9,7 +9,7 @@ module.exports = {
     description: `A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.`,
     siteUrl: `https://gatsbyglass.netlify.app`,
     social: {
-      twitter: `yinkakun`,
+      twitter: `chartmaster_`,
     },
     socialLinks: [
       {
@@ -131,7 +131,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: `Gatsby Glass RSS Feed`,
+            title: `Kabu Neko Blog RSS Feed`,
           },
         ],
       },
@@ -146,13 +146,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Frosted Blog`,
-        short_name: `Gatsby Frosted`,
+        name: `Kabu Neko Blog`,
+        short_name: `Kabu Neko Blog Frosted`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/icon.jpg`,
       },
     },
     `gatsby-plugin-react-helmet`,
