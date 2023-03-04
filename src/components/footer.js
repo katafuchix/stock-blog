@@ -10,8 +10,7 @@ const Footer = () => {
         <SocialLinks />
 
         <FooterAttribution>
-          Hand-crafted with love by{' '}
-          <a href="https://twitter.com/yinkakun">Yinka Adedire</a>
+          <a href="https://kabuneko.tokyo/">kabuneko.tokyo</a>
         </FooterAttribution>
       </FooterWrapper>
     </StyledFooter>
