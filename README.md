@@ -1,3 +1,7 @@
+$ gatsby develop
+$ gatsby build
+
+
 # Gatsby Starter Glass
 
 A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism UI.
