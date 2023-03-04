@@ -1,0 +1,20 @@
+on: [ workflow_dispatch ]
+name: Deploy website manual
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest  # 仮想環境の指定
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v2  # チェックアウトアクション（https://github.com/actions/checkout）
+     
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0    # FTPアップロードアクション（https://github.com/SamKirkland/FTP-Deploy-Action）
+      with:
+        server: ${{ secrets.FTP_SERVER }}          # FTPのサーバーアドレス
+        username: ${{ secrets.FTP_USERNAME }}      # FTPのユーザー名名
+        password: ${{ secrets.FTP_PASSWORD }}      # FTPのパスワード
+        local-dir: ./public/                       # アップロードしたいファイルのパス
+        server-dir: ${{ secrets.FTP_UPLOAD_DIR }}  # アップロード先のリモートパス
+        exclude: |
+          **/~partytown**
