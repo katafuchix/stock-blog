@@ -1,5 +1,5 @@
 ---
-title: About Mee
+title: このブログについて
 template: about-template
 ---
 
